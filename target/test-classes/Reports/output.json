@@ -1,0 +1,197 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 28,
+        "name": "Verifying the Error message in booked itinerary page",
+        "description": "",
+        "id": "verify-the-order-cancelled-sucessfull;verifying-the-error-message-in-booked-itinerary-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User is on AdactinHotel",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User should enter \"barathaventator\" , \"barathaventator\" and login",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User should search hotel \"Sydney\",\"Hotel Sunshine\",\"Double\",\"2 - Two\",\"17-12-2021\",\"18-12-2021\",\"2 - Two\"and\"0 - None\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User should select one hotel and continue",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User should enter the details \"Barath\",\"Kumar\",\"No.22, Omr, Chennai.\",\"123\" and Book Now",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "creditCardNo",
+                  "cardType",
+                  "month",
+                  "year"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "American Express",
+                  "January",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "VISA",
+                  "Februray",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "Master Card",
+                  "March",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "Other",
+                  "April",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "American Express",
+                  "May",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "VISA",
+                  "June",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "Master Card",
+                  "July",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "Other",
+                  "August",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "American Express",
+                  "September",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "VISA",
+                  "October",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "Master Card",
+                  "November",
+                  "2022"
+                ]
+              },
+              {
+                "cells": [
+                  "1234567890123456",
+                  "Other",
+                  "December",
+                  "2022"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "User should go to the booked itinerary page from booking confirmation page",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "Cancel the order ID and verify \"The booking has been cancelled.\" message",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Reg"
+          }
+        ]
+      }
+    ],
+    "name": "Verify the order cancelled sucessfull",
+    "description": "",
+    "id": "verify-the-order-cancelled-sucessfull",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/CancelBooking.feature",
+    "tags": []
+  }
+]
