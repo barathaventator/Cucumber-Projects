@@ -29,8 +29,6 @@ public class OJDBC {
 			
 			System.out.println(string);
 
-			System.out.println("Created By Dev team");
-			System.out.println("Perf worked in this File"); 
 			
 		}
 		
