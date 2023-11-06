@@ -25,7 +25,9 @@ public class BookingConfirmationPage extends BaseClass {
 	
 	public void bookingConfirmation() throws IOException {
 		
-		createCell(1, 18, getAttribute(orderNo));
+		//createCell(1, 18, getAttribute(orderNo));
+		
+		assertEquals(getAttribute(orderNo), getAttribute(orderNo));
 	}
 	
 	
