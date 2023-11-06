@@ -6,7 +6,7 @@ Feature: Verify the booking confirmation
     When User should search hotel "<location>","<hotel>","<roomType>","<noOfRoom>","<checkInDate>","<checkOutDate>","<adultsPerRoom>","<childPerRoom>"
     When User should select one hotel and continue
     When User should enter the details "<firstName>","<lastName>","<address>","<creditCardNo>","<cardType>","<month>","<year>","<cvvNo>" and Book Now
-    Then Verify the "Booking Confirmation" message get sucessfull
+    Then Verify the "Booking Confirmation" message get successfull
 
     Examples: 
       | userName | password | location | hotel | roomType | noOfRoom | checkInDate | checkOutDate | adultsPerRoom | childPerRoom | firstName | lastName | address | creditCardNo | cardType | month | year | cvvNo |

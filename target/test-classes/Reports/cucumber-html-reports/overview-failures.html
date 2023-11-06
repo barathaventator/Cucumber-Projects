@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>Acactin Hotel Automation</td>
-      <td>21 Dec 2021, 16:30</td>
+      <td>09 Oct 2023, 22:21</td>
     </tr>
   </tbody>
 </table>
@@ -115,7 +115,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1578710352.html">Verify the order cancelled sucessfull</a>
+      <a href="report-feature_3635664489.html">Verifying Adactin detail</a>
     </div>
 
 
@@ -125,14 +125,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.997</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verifying the Error message in booked itinerary page</span>
+  <span class="name">Verifying Adactin hotel login with valid credentials</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -164,11 +164,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given undefined">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
-  <span class="name">User is on AdactinHotel</span>
+  <span class="name">user is on the adactin hotel</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.997</span>
 
 </div>
 
@@ -176,6 +176,76 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.SessionNotCreatedException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114
+Current browser version is 117.0.5938.149 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MSI', ip: '192.168.1.151', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x0048A813+48355]
+	(No symbol) [0x0041C4B1]
+	(No symbol) [0x00325358]
+	(No symbol) [0x003461AC]
+	(No symbol) [0x00341EF3]
+	(No symbol) [0x00340579]
+	(No symbol) [0x00370C55]
+	(No symbol) [0x0037093C]
+	(No symbol) [0x0036A536]
+	(No symbol) [0x003482DC]
+	(No symbol) [0x003493DD]
+	GetHandleVerifier [0x006EAABD+2539405]
+	GetHandleVerifier [0x0072A78F+2800735]
+	GetHandleVerifier [0x0072456C+2775612]
+	GetHandleVerifier [0x005151E0+616112]
+	(No symbol) [0x00425F8C]
+	(No symbol) [0x00422328]
+	(No symbol) [0x0042240B]
+	(No symbol) [0x00414FF7]
+	BaseThreadInitThunk [0x76597BA9+25]
+	RtlInitializeExceptionChain [0x7727B79B+107]
+	RtlClearBits [0x7727B71F+191]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.hotel.BaseClass.getDriver(BaseClass.java:32)
+	at com.stepdefinition.LoginPageStep.user_is_on_the_adactin_hotel(LoginPageStep.java:25)
+	at &#10045;.user is on the adactin hotel(src/test/resources/Features/LoginPage.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -191,9 +261,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When undefined">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
-  <span class="name">User should enter &quot;barathaventator&quot; , &quot;barathaventator&quot; and login</span>
+  <span class="name">user should enter <span class="argument">&quot;barathaventator&quot;</span> and <span class="argument">&quot;barathaventator&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -218,197 +288,90 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">User should search hotel &quot;Sydney&quot;,&quot;Hotel Sunshine&quot;,&quot;Double&quot;,&quot;2 - Two&quot;,&quot;17-12-2021&quot;,&quot;18-12-2021&quot;,&quot;2 - Two&quot;and&quot;0 - None&quot;</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">User should select one hotel and continue</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">User should enter the details &quot;Barath&quot;,&quot;Kumar&quot;,&quot;No.22, Omr, Chennai.&quot;,&quot;123&quot; and Book Now</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-          <table class="step-arguments">
-              <tr>
-                  <td>creditCardNo</td>
-                  <td>cardType</td>
-                  <td>month</td>
-                  <td>year</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>American Express</td>
-                  <td>January</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>VISA</td>
-                  <td>Februray</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>Master Card</td>
-                  <td>March</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>Other</td>
-                  <td>April</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>American Express</td>
-                  <td>May</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>VISA</td>
-                  <td>June</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>Master Card</td>
-                  <td>July</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>Other</td>
-                  <td>August</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>American Express</td>
-                  <td>September</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>VISA</td>
-                  <td>October</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>Master Card</td>
-                  <td>November</td>
-                  <td>2022</td>
-              </tr>
-              <tr>
-                  <td>1234567890123456</td>
-                  <td>Other</td>
-                  <td>December</td>
-                  <td>2022</td>
-              </tr>
-          </table>
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When undefined">
-  <span class="keyword indention">When</span>
-  <span class="name">User should go to the booked itinerary page from booking confirmation page</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then undefined">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">Cancel the order ID and verify &quot;The booking has been cancelled.&quot; message</span>
+  <span class="name">user should search hotel <span class="argument">&quot;Sydney&quot;</span><span class="argument">&quot;Hotel Sunshine&quot;</span><span class="argument">&quot;Double&quot;</span><span class="argument">&quot;2 - Two&quot;</span><span class="argument">&quot;17-12-2021&quot;</span><span class="argument">&quot;18-12-2021&quot;</span><span class="argument">&quot;2 - Two&quot;</span><span class="argument">&quot;0 - None&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should select the hotel</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should book hotel <span class="argument">&quot;Barath&quot;</span><span class="argument">&quot;Kumar&quot;</span><span class="argument">&quot;No.22, Omr, Chennai.&quot;</span><span class="argument">&quot;1234656712320980&quot;</span><span class="argument">&quot;American Express&quot;</span><span class="argument">&quot;January	2022&quot;</span><span class="argument">&quot;2022&quot;</span><span class="argument">&quot;123&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should confirm hotel by order id</span>
 
   <span class="lead-duration duration">0.000</span>
 

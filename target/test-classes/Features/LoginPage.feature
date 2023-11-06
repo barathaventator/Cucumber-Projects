@@ -1,3 +1,4 @@
+@Reg
 Feature: Verifying Adactin detail
 
   Scenario Outline: Verifying Adactin hotel login with valid credentials
