@@ -12,8 +12,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 117.0.5938.149 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MSI\u0027, ip: \u0027192.168.1.151\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.8\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tGetHandleVerifier [0x0048A813+48355]\n\t(No symbol) [0x0041C4B1]\n\t(No symbol) [0x00325358]\n\t(No symbol) [0x003461AC]\n\t(No symbol) [0x00341EF3]\n\t(No symbol) [0x00340579]\n\t(No symbol) [0x00370C55]\n\t(No symbol) [0x0037093C]\n\t(No symbol) [0x0036A536]\n\t(No symbol) [0x003482DC]\n\t(No symbol) [0x003493DD]\n\tGetHandleVerifier [0x006EAABD+2539405]\n\tGetHandleVerifier [0x0072A78F+2800735]\n\tGetHandleVerifier [0x0072456C+2775612]\n\tGetHandleVerifier [0x005151E0+616112]\n\t(No symbol) [0x00425F8C]\n\t(No symbol) [0x00422328]\n\t(No symbol) [0x0042240B]\n\t(No symbol) [0x00414FF7]\n\tBaseThreadInitThunk [0x76597BA9+25]\n\tRtlInitializeExceptionChain [0x7727B79B+107]\n\tRtlClearBits [0x7727B71F+191]\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\r\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat com.hotel.BaseClass.getDriver(BaseClass.java:32)\r\n\tat com.stepdefinition.LoginPageStep.user_is_on_the_adactin_hotel(LoginPageStep.java:25)\r\n\tat ✽.user is on the adactin hotel(src/test/resources/Features/LoginPage.feature:5)\r\n",
-              "duration": 2997031100,
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 114\nCurrent browser version is 119.0.6045.106 with binary path C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MSI\u0027, ip: \u0027192.168.1.151\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.8\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tGetHandleVerifier [0x00ABA813+48355]\n\t(No symbol) [0x00A4C4B1]\n\t(No symbol) [0x00955358]\n\t(No symbol) [0x009761AC]\n\t(No symbol) [0x00971EF3]\n\t(No symbol) [0x00970579]\n\t(No symbol) [0x009A0C55]\n\t(No symbol) [0x009A093C]\n\t(No symbol) [0x0099A536]\n\t(No symbol) [0x009782DC]\n\t(No symbol) [0x009793DD]\n\tGetHandleVerifier [0x00D1AABD+2539405]\n\tGetHandleVerifier [0x00D5A78F+2800735]\n\tGetHandleVerifier [0x00D5456C+2775612]\n\tGetHandleVerifier [0x00B451E0+616112]\n\t(No symbol) [0x00A55F8C]\n\t(No symbol) [0x00A52328]\n\t(No symbol) [0x00A5240B]\n\t(No symbol) [0x00A44FF7]\n\tBaseThreadInitThunk [0x769D7BA9+25]\n\tRtlInitializeExceptionChain [0x77B7BD3B+107]\n\tRtlClearBits [0x77B7BCBF+191]\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)\r\n\tat java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\r\n\tat java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat com.hotel.BaseClass.getDriver(BaseClass.java:32)\r\n\tat com.stepdefinition.LoginPageStep.user_is_on_the_adactin_hotel(LoginPageStep.java:25)\r\n\tat ✽.user is on the adactin hotel(src/test/resources/Features/LoginPage.feature:5)\r\n",
+              "duration": 3322907500,
               "status": "failed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 10600,
+              "duration": 8100,
               "status": "skipped"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 5800,
+              "duration": 3400,
               "status": "skipped"
             },
             "line": 7,
@@ -93,7 +93,7 @@
           },
           {
             "result": {
-              "duration": 4700,
+              "duration": 2600,
               "status": "skipped"
             },
             "line": 8,
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 4400,
+              "duration": 4000,
               "status": "skipped"
             },
             "line": 9,
@@ -151,7 +151,7 @@
           },
           {
             "result": {
-              "duration": 4200,
+              "duration": 2500,
               "status": "skipped"
             },
             "line": 10,
