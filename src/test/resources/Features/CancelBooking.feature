@@ -1,6 +1,6 @@
 Feature: Verify the order cancelled sucessfull
 
-  @Reg
+  
   Scenario Outline: Verifying the Error message in booked itinerary page
     Given User is on AdactinHotel
     When User should enter "<userName>" , "<password>" and login
