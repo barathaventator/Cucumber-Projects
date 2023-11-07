@@ -1,64 +1,74 @@
 package com.stepdefinition;
 
-import java.util.concurrent.TimeUnit;
+import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 
 import com.hotel.BaseClass;
+import com.hotel.BookHotelPage;
+import com.hotel.BookingConfirmationPage;
+import com.hotel.LoginPage;
+import com.hotel.SearchHotelPage;
+import com.hotel.SelectHotelPage;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LoginPageStep extends BaseClass {
-	
+public class LoginPageStep extends BaseClass { 
+
 	WebDriver driver;
-	
-	@Given("User is on AdactinHotel")
-	public void user_is_on_AdactinHotel() {
+
+	@Given("user is on the adactin hotel")
+	public void user_is_on_the_adactin_hotel() {
+
+		getDriver();
+		loadUrl("https://adactinhotelapp.com/");
+		maximize();
+		implicitWait();
+
 	}
 
-	@When("User should enter {string} , {string} and login")
-	public void user_should_enter_and_login(String string, String string2) {
+	@When("user should enter {string} and {string}")
+	public void user_should_enter_and(String string, String string2) throws IOException {
+
+		LoginPage l = new LoginPage();
+
+		l.login(string, string2);
+
 	}
 
-	@When("User should search hotel {string},{string},{string},{string},{string},{string},{string}and{string}")
-	public void user_should_search_hotel_and(String string, String string2, String string3, String string4, String string5, String string6, String string7, String string8) {
+	@Then("user should search hotel {string}{string}{string}{string}{string}{string}{string}{string}")
+	public void user_should_search_hotel(String string, String string2, String string3, String string4, String string5,
+			String string6, String string7, String string8) throws IOException {
+
+		SearchHotelPage s = new SearchHotelPage();
+		s.searchHotel(string, string2, string3, string4, string5, string6, string7, string8);
+
 	}
 
-	@When("User should select one hotel and continue")
-	public void user_should_select_one_hotel_and_continue() {
+	@Then("user should select the hotel")
+	public void user_should_select_the_hotel() {
+
+		SelectHotelPage s = new SelectHotelPage();
+		s.selectHotel();
 	}
 
-	@When("User should enter the details {string},{string},{string},{string} and Book Now")
-	public void user_should_enter_the_details_and_Book_Now(String string, String string2, String string3, String string4, io.cucumber.datatable.DataTable dataTable) {
+	@Then("user should book hotel {string}{string}{string}{string}{string}{string}{string}{string}")
+	public void user_should_book_hotel(String string, String string2, String string3, String string4, String string5,
+			String string6, String string7, String string8) throws IOException, InterruptedException {
+
+		BookHotelPage b = new BookHotelPage();
+		b.bookHotel(string, string2, string3, string4, string5, string6, string7, string8);
+
 	}
 
-	@When("User should go to the booked itinerary page from booking confirmation page")
-	public void user_should_go_to_the_booked_itinerary_page_from_booking_confirmation_page() {
+	@Then("user should confirm hotel by order id")
+	public void user_should_confirm_hotel_by_order_id() throws IOException {
+
+		BookingConfirmationPage b = new BookingConfirmationPage();
+		b.bookingConfirmation();
+
 	}
 
-	@Then("Cancel the order ID and verify {string} message")
-	public void cancel_the_order_ID_and_verify_message(String string) {
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

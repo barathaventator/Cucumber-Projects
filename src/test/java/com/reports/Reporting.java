@@ -12,7 +12,7 @@ public class Reporting {
 	public static void generateJvmReport(String jsonFile) {
 
 		File reportDirectory = new File(
-				"C:\\Users\\barat\\eclipse-workspace\\CucumberDemo\\src\\test\\resources\\Reports");
+				"C:\\Users\\barat\\Documents\\Project\\Cucumber-Projects\\src\\test\\resources\\Reports");
 
 		Configuration configuration = new Configuration(reportDirectory, "Acactin Hotel Automation");
 

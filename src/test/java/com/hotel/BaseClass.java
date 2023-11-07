@@ -6,6 +6,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
@@ -22,8 +24,6 @@ import org.openqa.selenium.support.ui.Select;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
-	
-
 
 	public static WebDriver driver;
 
@@ -31,7 +31,7 @@ public class BaseClass {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 	}
-	
+
 	public void type(WebElement element, String search) {
 		element.sendKeys(search);
 	}
@@ -39,9 +39,15 @@ public class BaseClass {
 	public static void loadUrl(String url) {
 		driver.get(url);
 	}
-	
+
 	public static void closeCurrentTab() {
 		driver.close();
+	}
+
+	public static void implicitWait() {
+
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
 	}
 
 	public static void maximize() {
@@ -66,12 +72,12 @@ public class BaseClass {
 	public void click(WebElement element) {
 		element.click();
 	}
-	
+
 	public void alertAccept() {
 		driver.switchTo().alert().accept();
-		
+
 	}
-	
+
 	public void assertEquals(String expect, String actual) {
 		Assert.assertEquals(expect, actual);
 	}
@@ -80,11 +86,11 @@ public class BaseClass {
 		Select select = new Select(element);
 		select.selectByVisibleText(data);
 	}
-	
+
 	public String getText(WebElement element) {
 		String data = element.getText();
 		return data;
-		
+
 	}
 
 	public String getAttribute(WebElement element) {
@@ -136,7 +142,5 @@ public class BaseClass {
 			}
 		}
 	}
-
-
 
 }
